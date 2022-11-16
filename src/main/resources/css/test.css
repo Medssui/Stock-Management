@@ -1,0 +1,24 @@
+.bg-slider {
+  -fx-background-color: #845EC2 ;
+}
+
+.navbtn {
+  -fx-background-color: transparent ;
+}
+
+.navbtn:hover {
+  -fx-background-color: #613E9E ;
+  -fx-cursor: hand;
+}
+
+.navbtnactive {
+  -fx-background-color: #613E9E ;
+  -fx-cursor: hand;
+}
+
+.btnout {
+
+  -fx-background-color: transparent ;
+  -fx-cursor: hand;
+
+}

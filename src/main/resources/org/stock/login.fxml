@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="521.0" prefWidth="800.0" style="-fx-background-color: #141417;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stock.controllers.AuthenticationController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="521.0" stroke="BLACK" strokeType="INSIDE" width="800.0">
+         <fill>
+            <LinearGradient endX="0.7" endY="0.08571428571428566" startX="0.0380952380952381" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3960784375667572" green="0.1725490242242813" blue="0.1725490242242813" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.20689655172413793">
+                     <color>
+                        <Color red="0.3960784375667572" green="0.1725490242242813" blue="0.1725490242242813" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5938697318007661">
+                     <color>
+                        <Color red="0.04313725605607033" green="0.0235294122248888" blue="0.40784314274787903" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.08627451211214066" green="0.08235294371843338" blue="0.3294117748737335" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+        </Rectangle>
+      <Circle fill="#ff1e4f" layoutX="128.0" radius="100.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.bottomAnchor="421.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="572.0" AnchorPane.topAnchor="-100.0" />
+      <Circle fill="#ff1e4f" layoutX="705.0" layoutY="218.0" radius="54.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#ff1e4f" layoutX="85.0" layoutY="218.0" radius="43.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#ff1e4f" layoutX="651.0" layoutY="377.0" radius="47.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#ff1e4f" layoutX="128.0" layoutY="377.0" radius="43.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <AnchorPane layoutX="292.0" layoutY="59.0" prefHeight="405.0" prefWidth="256.0">
+         <children>
+            <TextField id="UserTxt" fx:id="username" alignment="CENTER" layoutX="48.0" layoutY="173.0" prefHeight="26.0" prefWidth="166.0" promptText="Nom Utilisateur" style="-fx-background-color: #0b0668; -fx-text-inner-color: #fff; -fx-border-color: #ff1e4f;" AnchorPane.topAnchor="173.0" />
+            <ImageView fitHeight="86.0" fitWidth="77.0" layoutX="93.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/user.png" />
+               </image>
+            </ImageView>
+            <PasswordField id="pwTxt" fx:id="password" alignment="CENTER" layoutX="46.0" layoutY="243.0" prefHeight="26.0" prefWidth="166.0" promptText="Mot De Passe" style="-fx-background-color: #0b0668; -fx-text-inner-color: #fff; -fx-border-color: #ff1e4f;" />
+            <Button layoutX="45.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#Authenticate" prefHeight="32.0" prefWidth="166.0" style="-fx-background-color: #ff1e4f; -fx-text-fill: #fff;" text="Entrer" />
+         </children>
+      </AnchorPane>
+      <Circle fill="#ff1e4f" layoutX="625.0" radius="100.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+    </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

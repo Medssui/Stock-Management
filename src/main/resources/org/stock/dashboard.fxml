@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="wrapper" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="600.0" prefHeight="554.0" prefWidth="721.0" stylesheets="@../../css/test.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stock.controllers.DashboardController">
+   <left>
+      <VBox fx:id="container" prefHeight="415.0" prefWidth="196.0" spacing="15.0" styleClass="bg-slider" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="136.0" prefWidth="196.0">
+               <children>
+                  <ImageView fitHeight="101.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../images/warehouse.png" />
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="TOP_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onMouseClicked="#changePage" prefHeight="39.0" prefWidth="196.0" text="Dashboard" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" userData="charts">
+               <font>
+                  <Font name="Roboto Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../images/home.png" />
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="navbtn" />
+                  <String fx:value="navbtnactive" />
+               </styleClass>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#changePage" prefHeight="39.0" prefWidth="196.0" styleClass="navbtn" text="Orders" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" userData="orders">
+               <font>
+                  <Font name="Roboto Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <Image url="@../../images/order.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#changePage" prefHeight="39.0" prefWidth="196.0" styleClass="navbtn" text="Clients" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" userData="clients">
+               <font>
+                  <Font name="Roboto Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <Image url="@../../images/user.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#changePage" prefHeight="39.0" prefWidth="196.0" styleClass="navbtn" text="Category" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" userData="categories">
+               <font>
+                  <Font name="Roboto Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../../images/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#changePage" prefHeight="39.0" prefWidth="196.0" styleClass="navbtn" text="Products" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" userData="products">
+               <font>
+                  <Font name="Roboto Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <Image url="@../../images/Produit.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#changePage" prefHeight="39.0" prefWidth="196.0" styleClass="navbtn" text="Suppliers" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" userData="suppliers">
+               <font>
+                  <Font name="Roboto Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <Image url="@../../images/hotel-supplier.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Region VBox.vgrow="ALWAYS" />
+            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" maxWidth="Infinity" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="63.0" prefWidth="196.0" styleClass="btnout" text="Se Deconnecter" textAlignment="CENTER" textFill="#ff9671" textOverrun="CLIP">
+               <!-- This button needs to aligned to the bottom of the VBox -->
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <Image url="@../../images/logout.png" />
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" spread="0.94">
+                           <color>
+                              <Color red="0.8196078538894653" green="0.22745098173618317" blue="0.1568627506494522" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="40.0" top="20.0" />
+               </padding>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="0.0" radius="16.6125" width="68.45">
+               <color>
+                  <Color red="0.5526315569877625" green="0.5526315569877625" blue="0.5526315569877625" />
+               </color>
+            </DropShadow>
+         </effect>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.panemu.tiwulfx.table.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anPan" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stock.controllers.ProductsControllers">
+   <children>
+      <TableControl stylesheets="@../../css/tiwulfx.css" fx:id="productTable" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" >
+              <columns>
+                  <TickColumn fx:id="clmTick"/>
+                  <NumberColumn fx:id="clmId"  propertyName="id" editable="false" text="#"  />
+                  <TextColumn fx:id="clmRef"  required="true"  propertyName="ref"  text="ref" />
+                  <TextColumn fx:id="clmlable"  required="true"  propertyName="lable"  text="lable" />
+                  <NumberColumn fx:id="price"  required="true" propertyName="price" text="price"  />
+                  <NumberColumn fx:id="quantity"  required="true" propertyName="quantity" text="quantity"  />
+                  <LookupColumn fx:id="clmCategory" lookupPropertyName="lable" propertyName="category" text="category"  />
+              </columns>
+      </TableControl>
+   </children>
+</AnchorPane>

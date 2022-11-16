@@ -1,0 +1,21 @@
+.addproduct {
+    -fx-hgap: 20px;
+    -fx-background-color: #5C3A99;
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color:  #00C9A7;
+    -fx-effect: dropshadow(three-pass-box,  #00C9A7, 10, 0, 0, 0);
+}
+
+.productelement {
+    -fx-hgap: 20px;
+    -fx-background-color:  #CA9FFF;
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color:  black;
+    -fx-effect: dropshadow(three-pass-box,  rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stock.controllers.ChartsController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="30.0" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff6f91" height="83.0" stroke="BLACK" strokeType="INSIDE" width="120.0">
+                           <effect>
+                              <DropShadow height="35.82" radius="20.377499999999998" spread="0.26" width="47.69">
+                                 <color>
+                                    <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../../images/user.png" />
+                              </ImageView>
+                              <Label fx:id="clientcount" contentDisplay="CENTER" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="425.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc75f" height="83.0" stroke="BLACK" strokeType="INSIDE" width="120.0">
+                           <effect>
+                              <DropShadow height="35.82" radius="20.377499999999998" spread="0.26" width="47.69">
+                                 <color>
+                                    <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/hotel-supplier.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="suppliercount" contentDisplay="CENTER" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="540.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00c9a7" height="83.0" stroke="BLACK" strokeType="INSIDE" width="120.0">
+                           <effect>
+                              <DropShadow height="35.82" radius="20.377499999999998" spread="0.26" width="47.69">
+                                 <color>
+                                    <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/Produit.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="productcount" contentDisplay="CENTER" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="655.0" layoutY="20.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9671" height="83.0" stroke="BLACK" strokeType="INSIDE" width="120.0">
+                           <effect>
+                              <DropShadow height="35.82" radius="20.377499999999998" spread="0.26" width="47.69">
+                                 <color>
+                                    <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/order.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="ordercount" contentDisplay="CENTER" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox fx:id="chart" alignment="CENTER" spacing="30.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <PieChart fx:id="pieChartProduct" prefWidth="500.0" title="Produits">
+                     <effect>
+                        <DropShadow />
+                     </effect></PieChart>
+                  <LineChart fx:id="lineChartOrderYear">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </LineChart>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

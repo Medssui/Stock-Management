@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.panemu.tiwulfx.table.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../css/orders.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stock.controllers.SupplierController">
+   <children>
+      <TableControl fx:id="tableSupplier" prefHeight="378.0" prefWidth="159.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <columns>
+              <NumberColumn fx:id="id" editable="false" propertyName="id" text="id" />
+              <TextColumn fx:id="email" propertyName="email" required="true" text="email" />
+              <TextColumn fx:id="tel" propertyName="tel" required="true" text="tel" />
+              <TextColumn fx:id="adresse" propertyName="adresse" required="true" text="adresse" />
+              <TextColumn fx:id="type" propertyName="type" required="true" text="type" />
+          </columns>
+      </TableControl>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+   <effect>
+      <DropShadow height="0.0" radius="8.4575" width="35.83">
+         <color>
+            <Color red="0.32894736528396606" green="0.3152412176132202" blue="0.3152412176132202" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>

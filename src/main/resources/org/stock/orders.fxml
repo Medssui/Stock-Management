@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.panemu.tiwulfx.table.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../css/orders.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.stock.controllers.OrdersController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <TableControl fx:id="tableOrder" prefHeight="378.0" prefWidth="159.0">
+               <columns>
+                  <TickColumn fx:id="clmTick" />
+                  <NumberColumn fx:id="id" editable="false" prefWidth="50.0" propertyName="id" text="id" />
+                  <NumberColumn fx:id="price" prefWidth="50.0" propertyName="price" required="true" text="price" />
+                  <NumberColumn fx:id="tax" prefWidth="50.0" propertyName="tax" required="true" text="tax" />
+                  <NumberColumn fx:id="ttcPrice" prefWidth="50.0" propertyName="ttcPrice" required="true" text="ttcPrice" />
+                  <TypeAheadColumn  fx:id="status" prefWidth="50.0" propertyName="status" required="true" text="status"/>
+                  <DateColumn fx:id="application_date" prefWidth="75.0" propertyName="applicationDate" required="true" text="application_date" />
+                  <DateColumn fx:id="delivery_date" prefWidth="75.0" propertyName="deliveryDate" required="true" text="delivery_date" />
+                  <TextColumn fx:id="delivery_vendor" prefWidth="75.0" propertyName="deliveryVendor" required="true" text="delivery_vendor" />
+                  <LookupColumn fx:id="client" lookupPropertyName="firstname" prefWidth="70.0" propertyName="client" text="client" />
+               </columns>
+            </TableControl>
+            <ScrollPane fitToWidth="true" prefHeight="378.0" style="-fx-background-color: #F5F5F5;">
+               <content>
+                  <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: #F5F5F5;">
+                     <children>
+                        <HBox alignment="TOP_CENTER">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" text="Product" textAlignment="CENTER" textFill="#ff6f91">
+                                 <font>
+                                    <Font name="System Bold" size="41.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="1.0" green="0.43529412150382996" blue="0.5686274766921997" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="10.0" styleClass="addproduct" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="Product" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                    <ComboBox fx:id="productItemName" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" promptText="product" VBox.vgrow="NEVER" />
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Quantity" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                    <Spinner fx:id="productItemQuantity" amountToStepBy="1" editable="true" initialValue="1" max="100" maxWidth="1.7976931348623157E308" min="1" VBox.vgrow="NEVER">
+
+
+                                    </Spinner>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="BOTTOM_CENTER" HBox.hgrow="NEVER">
+                                 <children>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" ellipsisString="+" mnemonicParsing="false" onMouseClicked="#addProductitem" style="-fx-background-color: #00C9A7;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></Button>
+                                 </children></VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="10.0" right="10.0" top="6.0" />
+                           </padding>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <VBox fx:id="productItemContainer" spacing="15.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+
+   </children>
+</AnchorPane>
